@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+/* reset css */
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+    /*border: 1px solid red;*/
+}
+
+header *, .song *, .app, .player * {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+
+/* variables */
+:root {
+    --main-color: #2B29D5;
+    --text-color: #fff;
+}
+
+
+/* app styling */
+.app {
+    color: var(--text-color);
+    background: #3a4dd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a4dd5, #2d2d95);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a4dd5, #2d2d95); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* scrollbars */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2d2d95;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 40px;
+}

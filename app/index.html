@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Player - songs</title>
+
+    <link rel="stylesheet" href="css/app.css" type="text/css">
+    <link rel="stylesheet" href="css/songs.css" type="text/css">
+    <link rel="stylesheet" href="css/player.css" type="text/css">
+    <script src="https://kit.fontawesome.com/5a6d1e7ebc.js" crossorigin="anonymous"></script>
+</head>
+<body class="app">
+
+<section class="main">
+
+    <nav>
+        <p><i class="fas fa-chevron-left"></i></p>
+    </nav>
+
+    <header>
+        <h1>My music</h1>
+        <div class="user-settings">
+            <img src="https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="user profile">
+        </div>
+    </header>
+
+    <section class="album-art">
+        <!-- last played song art -->
+    </section>
+
+    <section class="songs">
+        <p>Offline songs</p>
+
+            <div class="song">
+                <div class="cover">
+                    <img src="https://geo-media.beatport.com/image_size/250x250/e06b5172-ef06-4357-a2ec-ecc018ce3fa9.jpg" alt="song cover">
+                </div>
+                <div class="info">
+                    <h3>INTO YOU</h3>
+                    <p>Tsuki</p>
+                    <div class="fade-overflow"></div>
+                </div>
+            </div>
+
+        <div class="song">
+            <div class="cover">
+                <img src="https://img.discogs.com/DHHJzDspHs62yz7GBMFIC9RW1X0=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-14405336-1573857306-8883.jpeg.jpg" alt="song cover">
+            </div>
+            <div class="info">
+                <h3>Wavey One</h3>
+                <p>Bru-C, Mr Traumatik, Tsuki</p>
+                <div class="fade-overflow"></div>
+            </div>
+        </div>
+
+
+        <div class="song">
+            <div class="cover">
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/Music49/v4/71/f3/eb/71f3eb7d-5273-8d8f-a027-3015fa8a8a6b/SHOWTIME004-Orig.jpg/268x0w.jpg" alt="song cover">
+            </div>
+            <div class="info">
+                <h3>Anthem</h3>
+                <p>SASASAS</p>
+            </div>
+        </div>
+
+        <div class="song">
+            <div class="cover">
+                <img src="https://static.qobuz.com/images/covers/4b/cm/xev1gq113cm4b_600.jpg" alt="song cover">
+            </div>
+            <div class="info">
+                <h3>Control</h3>
+                <p>Tsuki</p>
+            </div>
+        </div>
+
+
+        <div class="song">
+            <div class="cover">
+                <img src="http://cdn.last.fm/flatness/responsive/2/noimage/default_album_300_g4.png" alt="song cover">
+            </div>
+            <div class="info">
+                <h3>Song title</h3>
+                <p>Artist ft. Artist</p>
+            </div>
+        </div>
+
+        <div class="song">
+            <div class="cover">
+                <img src="http://cdn.last.fm/flatness/responsive/2/noimage/default_album_300_g4.png" alt="song cover">
+            </div>
+            <div class="info">
+                <h3>Song title</h3>
+                <p>Artist ft. Artist</p>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+</section>
+
+
+<section class="player" id="player">
+        <div class="album">
+            <img id="song-cover" src="https://geo-media.beatport.com/image_size/250x250/e06b5172-ef06-4357-a2ec-ecc018ce3fa9.jpg" alt="song cover">
+        </div>
+
+        <div class="info">
+            <h3 id="song-name">INTO YOU</h3>
+            <p id="song-artist">Tsuki</p>
+            <div class="fade-overflow"></div>
+        </div>
+
+        <div class="controls">
+            <i class="fas fa-backward hide"></i>
+            <i class="fas fa-play"></i>
+            <i class="fas fa-forward"></i>
+        </div>
+</section>
+
+
+<script src="js/songs.js"></script>
+<script src="js/player.js"></script>
+</body>
+</html>
